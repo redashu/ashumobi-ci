@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ashuapptest:
+    image: ashumobiapp:v1 
+    build: . # calling dockerfile in current location 
+    container_name: ashuc1
+    ports: # plz use any port on host side 1024-600000 
+    - "1234:80"
+    restart: always 
